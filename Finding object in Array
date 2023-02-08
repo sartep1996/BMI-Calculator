@@ -1,0 +1,10 @@
+package com.petras;
+
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] arg) {
+
+        Object [] Haystack  = {"3", "123124234", null, "needle", "world", "hay", 2, "3", true, false};
+        int findNeedle = Arrays.asList(Haystack).indexOf("needle");
+        System.out.println("found the needle at position " + findNeedle);
