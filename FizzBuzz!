@@ -1,0 +1,23 @@
+package com.petras;
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] arg) {
+
+        Scanner Scanner = new Scanner(System.in);
+
+        System.out.println("Please enter your number");
+        double number = Scanner.nextDouble();
+
+        double finalNumber = number;
+
+        if (finalNumber % 3 == 0 && finalNumber % 5== 0 )
+        System.out.println("Fizzbuzz");
+        else if (finalNumber % 5 == 0)
+        System.out.println("Fizz");
+        else if (finalNumber % 3 == 0)
+        System.out.println("Buzz");
+
+        }
+    }
