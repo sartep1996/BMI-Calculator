@@ -1,0 +1,21 @@
+package com.petras;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner Scanner = new Scanner(System.in);
+
+        System.out.println("Please Enter Number");
+        int number = Scanner.nextInt();
+        int sum = 0;
+
+        for (int i=0; i<=number; i++){
+            sum= sum +  i;
+        }
+        System.out.println("Sum of all numbers " + number + "is " + sum );
+
+    }
+}
