@@ -1,0 +1,23 @@
+package com.petras;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner Scanner = new Scanner(System.in);
+
+        System.out.println("Please enter your number: ");
+        int enteredNumber = Scanner.nextInt();
+        int sum = 0;
+
+        for (int i =1 ; i <= enteredNumber; i++) {
+            if (i % 2 == 0) {
+                sum += i;
+            }
+        }
+            System.out.println("The sum of all equal numbers of entered number " + enteredNumber + "is" + sum);
+
+        }
+    }
