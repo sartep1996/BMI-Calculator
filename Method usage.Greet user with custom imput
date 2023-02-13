@@ -1,0 +1,25 @@
+package com.petras;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner Scanner = new Scanner(System.in);
+        System.out.println("Enter your first name: ");
+        String firstName = Scanner.next();
+        System.out.println("Enter your first last name: ");
+        String lastName = Scanner.next();
+
+        String greeting = greetUser(firstName, lastName);
+        System.out.println(greeting);
+
+        }
+
+        public static String greetUser (String firstName, String lastName){
+
+            return "Hello " + firstName + " " + lastName;
+
+
+        }
+    }
