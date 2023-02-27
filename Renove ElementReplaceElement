@@ -1,0 +1,13 @@
+package com.petras;
+
+import java.util.Arrays;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        String string = "Hello!!!World!!!";
+        String newString = string.replaceAll("(!)", "");
+        System.out.println(newString);
+
+
