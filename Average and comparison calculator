@@ -1,0 +1,37 @@
+package com.petras;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        double myScore = 7;
+        int[] classScores = {3, 9, 8, 4, 6, 3, 7};
+        int testParticipants = 7;
+        double average = 0;
+
+
+        int i;
+        for (i = 0; i < testParticipants; i++) {
+            average = average + classScores[i];
+            //The code then initializes a loop using a "for" statement, 
+            // which will iterate through each of the test scores in "classScores" 
+            // and add them together to calculate the average test score of the class. 
+            // This is done by initializing "i" to 0, and then repeatedly incrementing "i" by 1 
+            // until it reaches the value of "testParticipants" (which is 7 in this case). 
+            // Within each iteration of the loop, the code adds the current test score to the variable "average".
+        }
+
+        if ( average/testParticipants > myScore) {
+            System.out.println("false");
+        }else if (average/testParticipants <= myScore)
+            System.out.println("true");
+
+
+    }
+}
+
+
+
+
+
+
